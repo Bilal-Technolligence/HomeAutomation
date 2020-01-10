@@ -15,7 +15,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class BulbActivity extends AppCompatActivity {
 
     Switch b1,b2,b3,b4,b5,b6;
-    ImageView bulblighton;
+    ImageView l1,l2,l3,l4,l5,l6;
     DatabaseReference dref= FirebaseDatabase.getInstance().getReference();
 
     @Override
@@ -30,6 +30,13 @@ public class BulbActivity extends AppCompatActivity {
         b5 = (Switch) findViewById( R.id.btnb5 );
         b6 = (Switch) findViewById( R.id.btnb6 );
 
+        l1= (ImageView)findViewById(R.id.img1);
+        l1= (ImageView)findViewById(R.id.img2);
+        l1= (ImageView)findViewById(R.id.img3);
+        l1= (ImageView)findViewById(R.id.img4);
+        l1= (ImageView)findViewById(R.id.img5);
+        l1= (ImageView)findViewById(R.id.img6);
+
         b1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -37,13 +44,12 @@ public class BulbActivity extends AppCompatActivity {
                     Toast.makeText( BulbActivity.this, "LightOn", Toast.LENGTH_SHORT ).show();
                     dref.child( "Light" ).child( "b1" ).setValue( 1 );
 
-                    String uri = "@drawable/bulb";  // where myresource (without the extension) is the file
+                    String urione = "@drawable/bulb";  // where myresource (without the extension) is the file
 
-                    int imageResource = getResources().getIdentifier(uri, null, getPackageName());
+                    int imageResource = getResources().getIdentifier(urione, null, getPackageName());
 
-                    bulblighton= (ImageView)findViewById(R.id.img1);
-                    Drawable res = getResources().getDrawable(imageResource);
-                    bulblighton.setImageDrawable(res);
+                    Drawable resure = getResources().getDrawable(imageResource);
+                    l1.setImageDrawable(resure);
 //                    dref.child( "SmokeGas" ).child( "Smoke" ).setValue( 0 );
 //                    Animation animation = AnimationUtils.loadAnimation(ActivitySmoke.this, R.anim.fananim);
 //                    animationTarget.startAnimation(animation);
@@ -56,13 +62,13 @@ public class BulbActivity extends AppCompatActivity {
                     dref.child( "Light" ).child( "b1" ).setValue( 0 );
 
 
-                    String uri = "@drawable/lightbulb";  // where myresource (without the extension) is the file
+                    String urione = "@drawable/lightbulb";  // where myresource (without the extension) is the file
 
-                    int imageResource = getResources().getIdentifier(uri, null, getPackageName());
+                    int imageResource = getResources().getIdentifier(urione, null, getPackageName());
 
-                    bulblighton= (ImageView)findViewById(R.id.img1);
-                    Drawable res = getResources().getDrawable(imageResource);
-                    bulblighton.setImageDrawable(res);
+                  //  l1= (ImageView)findViewById(R.id.img1);
+                    Drawable resure = getResources().getDrawable(imageResource);
+                    l1.setImageDrawable(resure);
 
                     Toast.makeText( BulbActivity.this, "LightOff", Toast.LENGTH_SHORT ).show();
 //                    Animation animation = AnimationUtils.loadAnimation(ActivitySmoke.this, R.anim.stopfananim);
@@ -79,13 +85,13 @@ public class BulbActivity extends AppCompatActivity {
                     Toast.makeText( BulbActivity.this, "LightOn", Toast.LENGTH_SHORT ).show();
                     dref.child( "Light" ).child( "b2" ).setValue( 1 );
 
-                    String uri = "@drawable/bulb";  // where myresource (without the extension) is the file
+                    String uri = "@drawable/bulb1";  // where myresource (without the extension) is the file
 
                     int imageResource = getResources().getIdentifier(uri, null, getPackageName());
 
-                    bulblighton= (ImageView)findViewById(R.id.img1);
+                 //   l2= (ImageView)findViewById(R.id.img1);
                     Drawable res = getResources().getDrawable(imageResource);
-                    bulblighton.setImageDrawable(res);
+                    l2.setImageDrawable(res);
 //                    dref.child( "SmokeGas" ).child( "Smoke" ).setValue( 0 );
 //                    Animation animation = AnimationUtils.loadAnimation(ActivitySmoke.this, R.anim.fananim);
 //                    animationTarget.startAnimation(animation);
@@ -98,13 +104,13 @@ public class BulbActivity extends AppCompatActivity {
                     dref.child( "Light" ).child( "b2" ).setValue( 0 );
 
 
-                    String uri = "@drawable/lightbulb";  // where myresource (without the extension) is the file
+                    String uritwo = "@drawable/lightbulb";  // where myresource (without the extension) is the file
 
-                    int imageResource = getResources().getIdentifier(uri, null, getPackageName());
+                    int imageResourceTwo = getResources().getIdentifier(uritwo, null, getPackageName());
 
-                    bulblighton= (ImageView)findViewById(R.id.img2);
-                    Drawable res = getResources().getDrawable(imageResource);
-                    bulblighton.setImageDrawable(res);
+                  //  bulblighton= (ImageView)findViewById(R.id.img2);
+                    Drawable restwo = getResources().getDrawable(imageResourceTwo);
+                    l2.setImageDrawable(restwo);
 
                     Toast.makeText( BulbActivity.this, "LightOff", Toast.LENGTH_SHORT ).show();
 //                    Animation animation = AnimationUtils.loadAnimation(ActivitySmoke.this, R.anim.stopfananim);
@@ -124,9 +130,9 @@ public class BulbActivity extends AppCompatActivity {
 
                     int imageResource = getResources().getIdentifier(uri, null, getPackageName());
 
-                    bulblighton= (ImageView)findViewById(R.id.img1);
+                  //  bulblighton= (ImageView)findViewById(R.id.img1);
                     Drawable res = getResources().getDrawable(imageResource);
-                    bulblighton.setImageDrawable(res);
+                    l3.setImageDrawable(res);
 //                    dref.child( "SmokeGas" ).child( "Smoke" ).setValue( 0 );
 //                    Animation animation = AnimationUtils.loadAnimation(ActivitySmoke.this, R.anim.fananim);
 //                    animationTarget.startAnimation(animation);
@@ -143,9 +149,9 @@ public class BulbActivity extends AppCompatActivity {
 
                     int imageResource = getResources().getIdentifier(uri, null, getPackageName());
 
-                    bulblighton= (ImageView)findViewById(R.id.img3);
+                  //  bulblighton= (ImageView)findViewById(R.id.img3);
                     Drawable res = getResources().getDrawable(imageResource);
-                    bulblighton.setImageDrawable(res);
+                    l3.setImageDrawable(res);
 
                     Toast.makeText( BulbActivity.this, "LightOff", Toast.LENGTH_SHORT ).show();
 //                    Animation animation = AnimationUtils.loadAnimation(ActivitySmoke.this, R.anim.stopfananim);
@@ -166,9 +172,9 @@ public class BulbActivity extends AppCompatActivity {
 
                     int imageResource = getResources().getIdentifier(uri, null, getPackageName());
 
-                    bulblighton= (ImageView)findViewById(R.id.img1);
+                   // bulblighton= (ImageView)findViewById(R.id.img1);
                     Drawable res = getResources().getDrawable(imageResource);
-                    bulblighton.setImageDrawable(res);
+                    l4.setImageDrawable(res);
 //                    dref.child( "SmokeGas" ).child( "Smoke" ).setValue( 0 );
 //                    Animation animation = AnimationUtils.loadAnimation(ActivitySmoke.this, R.anim.fananim);
 //                    animationTarget.startAnimation(animation);
@@ -185,9 +191,9 @@ public class BulbActivity extends AppCompatActivity {
 
                     int imageResource = getResources().getIdentifier(uri, null, getPackageName());
 
-                    bulblighton= (ImageView)findViewById(R.id.img4);
+                   // bulblighton= (ImageView)findViewById(R.id.img4);
                     Drawable res = getResources().getDrawable(imageResource);
-                    bulblighton.setImageDrawable(res);
+                    l4.setImageDrawable(res);
 
                     Toast.makeText( BulbActivity.this, "LightOff", Toast.LENGTH_SHORT ).show();
 //                    Animation animation = AnimationUtils.loadAnimation(ActivitySmoke.this, R.anim.stopfananim);
@@ -208,9 +214,9 @@ public class BulbActivity extends AppCompatActivity {
 
                     int imageResource = getResources().getIdentifier(uri, null, getPackageName());
 
-                    bulblighton= (ImageView)findViewById(R.id.img1);
+                    //bulblighton= (ImageView)findViewById(R.id.img1);
                     Drawable res = getResources().getDrawable(imageResource);
-                    bulblighton.setImageDrawable(res);
+                    l5.setImageDrawable(res);
 //                    dref.child( "SmokeGas" ).child( "Smoke" ).setValue( 0 );
 //                    Animation animation = AnimationUtils.loadAnimation(ActivitySmoke.this, R.anim.fananim);
 //                    animationTarget.startAnimation(animation);
@@ -227,9 +233,9 @@ public class BulbActivity extends AppCompatActivity {
 
                     int imageResource = getResources().getIdentifier(uri, null, getPackageName());
 
-                    bulblighton= (ImageView)findViewById(R.id.img5);
+                   // bulblighton= (ImageView)findViewById(R.id.img5);
                     Drawable res = getResources().getDrawable(imageResource);
-                    bulblighton.setImageDrawable(res);
+                    l5.setImageDrawable(res);
 
                     Toast.makeText( BulbActivity.this, "LightOff", Toast.LENGTH_SHORT ).show();
 //                    Animation animation = AnimationUtils.loadAnimation(ActivitySmoke.this, R.anim.stopfananim);
@@ -244,15 +250,15 @@ public class BulbActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(b6.isChecked()){
                     Toast.makeText( BulbActivity.this, "LightOn", Toast.LENGTH_SHORT ).show();
-                    dref.child( "Light" ).child( "b1" ).setValue( 1 );
+                    dref.child( "Light" ).child( "b6" ).setValue( 1 );
 
                     String uri = "@drawable/bulb5";  // where myresource (without the extension) is the file
 
-                    int imageResource = getResources().getIdentifier(uri, null, getPackageName());
+                    int imageResource1 = getResources().getIdentifier(uri, null, getPackageName());
 
-                    bulblighton= (ImageView)findViewById(R.id.img1);
-                    Drawable res = getResources().getDrawable(imageResource);
-                    bulblighton.setImageDrawable(res);
+                    l6= (ImageView)findViewById(R.id.img1);
+                    Drawable res1 = getResources().getDrawable(imageResource1);
+                    l6.setImageDrawable(res1);
 //                    dref.child( "SmokeGas" ).child( "Smoke" ).setValue( 0 );
 //                    Animation animation = AnimationUtils.loadAnimation(ActivitySmoke.this, R.anim.fananim);
 //                    animationTarget.startAnimation(animation);
@@ -265,13 +271,13 @@ public class BulbActivity extends AppCompatActivity {
                     dref.child( "Light" ).child( "b6" ).setValue( 0 );
 
 
-                    String uri = "@drawable/lightbulb";  // where myresource (without the extension) is the file
+                    String uri1 = "@drawable/lightbulb";  // where myresource (without the extension) is the file
 
-                    int imageResource = getResources().getIdentifier(uri, null, getPackageName());
+                    int imageResource1 = getResources().getIdentifier(uri1, null, getPackageName());
 
-                    bulblighton= (ImageView)findViewById(R.id.img6);
-                    Drawable res = getResources().getDrawable(imageResource);
-                    bulblighton.setImageDrawable(res);
+                    l6= (ImageView)findViewById(R.id.img6);
+                    Drawable res1 = getResources().getDrawable(imageResource1);
+                    l6.setImageDrawable(res1);
 
                     Toast.makeText( BulbActivity.this, "LightOff", Toast.LENGTH_SHORT ).show();
 //                    Animation animation = AnimationUtils.loadAnimation(ActivitySmoke.this, R.anim.stopfananim);
