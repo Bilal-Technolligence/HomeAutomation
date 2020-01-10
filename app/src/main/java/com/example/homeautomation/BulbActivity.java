@@ -77,7 +77,7 @@ public class BulbActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(b2.isChecked()){
                     Toast.makeText( BulbActivity.this, "LightOn", Toast.LENGTH_SHORT ).show();
-                    dref.child( "Light" ).child( "b1" ).setValue( 1 );
+                    dref.child( "Light" ).child( "b2" ).setValue( 1 );
 
                     String uri = "@drawable/bulb";  // where myresource (without the extension) is the file
 
@@ -118,7 +118,7 @@ public class BulbActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(b3.isChecked()){
                     Toast.makeText( BulbActivity.this, "LightOn", Toast.LENGTH_SHORT ).show();
-                    dref.child( "Light" ).child( "b1" ).setValue( 1 );
+                    dref.child( "Light" ).child( "b3" ).setValue( 1 );
 
                     String uri = "@drawable/bulb";  // where myresource (without the extension) is the file
 
@@ -160,9 +160,9 @@ public class BulbActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(b4.isChecked()){
                     Toast.makeText( BulbActivity.this, "LightOn", Toast.LENGTH_SHORT ).show();
-                    dref.child( "Light" ).child( "b1" ).setValue( 1 );
+                    dref.child( "Light" ).child( "b4" ).setValue( 1 );
 
-                    String uri = "@drawable/bulb";  // where myresource (without the extension) is the file
+                    String uri = "@drawable/bulb3";  // where myresource (without the extension) is the file
 
                     int imageResource = getResources().getIdentifier(uri, null, getPackageName());
 
@@ -202,9 +202,9 @@ public class BulbActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(b5.isChecked()){
                     Toast.makeText( BulbActivity.this, "LightOn", Toast.LENGTH_SHORT ).show();
-                    dref.child( "Light" ).child( "b1" ).setValue( 1 );
+                    dref.child( "Light" ).child( "b5" ).setValue( 1 );
 
-                    String uri = "@drawable/bulb";  // where myresource (without the extension) is the file
+                    String uri = "@drawable/bulb4";  // where myresource (without the extension) is the file
 
                     int imageResource = getResources().getIdentifier(uri, null, getPackageName());
 
@@ -246,7 +246,7 @@ public class BulbActivity extends AppCompatActivity {
                     Toast.makeText( BulbActivity.this, "LightOn", Toast.LENGTH_SHORT ).show();
                     dref.child( "Light" ).child( "b1" ).setValue( 1 );
 
-                    String uri = "@drawable/bulb";  // where myresource (without the extension) is the file
+                    String uri = "@drawable/bulb5";  // where myresource (without the extension) is the file
 
                     int imageResource = getResources().getIdentifier(uri, null, getPackageName());
 
