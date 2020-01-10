@@ -82,8 +82,7 @@
                     android:id="@+id/btnb1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="7dp"
-                    android:background="#EFCE15"/>
+                    android:layout_marginTop="7dp" />
 
 
             </LinearLayout>
@@ -128,8 +127,7 @@
                     android:id="@+id/btnb2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="7dp"
-                    android:background="#EFCE15"/>
+                    android:layout_marginTop="7dp" />
 
 
             </LinearLayout>
@@ -189,8 +187,7 @@
                     android:id="@+id/btnb3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="7dp"
-                    android:background="#EFCE15"/>
+                    android:layout_marginTop="7dp" />
 
 
             </LinearLayout>
@@ -235,8 +232,7 @@
                     android:id="@+id/btnb4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="7dp"
-                    android:background="#EFCE15"/>
+                    android:layout_marginTop="7dp" />
 
 
             </LinearLayout>
@@ -296,8 +292,7 @@
                     android:id="@+id/btnb5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="7dp"
-                    android:background="#EFCE15"/>
+                    android:layout_marginTop="7dp"/>
 
 
             </LinearLayout>
@@ -342,8 +337,7 @@
                     android:id="@+id/btnb6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="7dp"
-                    android:background="#EFCE15"/>
+                    android:layout_marginTop="7dp"/>
 
 
             </LinearLayout>
