@@ -47,7 +47,7 @@ public class BulbActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 int x = Integer.parseInt(dataSnapshot.getValue().toString());
                 if (x == 1) {
-                    String urione = "@drawable/bulb";  // where myresource (without the extension) is the file
+                    String urione = "@drawable/bulbon";  // where myresource (without the extension) is the file
 
                     int imageResource = getResources().getIdentifier(urione, null, getPackageName());
 
@@ -67,7 +67,7 @@ public class BulbActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 int x = Integer.parseInt(dataSnapshot.getValue().toString());
                 if (x == 1) {
-                    String urione = "@drawable/bulb";  // where myresource (without the extension) is the file
+                    String urione = "@drawable/bulbon";  // where myresource (without the extension) is the file
 
                     int imageResource = getResources().getIdentifier(urione, null, getPackageName());
 
@@ -87,7 +87,7 @@ public class BulbActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 int x = Integer.parseInt(dataSnapshot.getValue().toString());
                 if (x == 1) {
-                    String urione = "@drawable/bulb";  // where myresource (without the extension) is the file
+                    String urione = "@drawable/bulbon";  // where myresource (without the extension) is the file
 
                     int imageResource = getResources().getIdentifier(urione, null, getPackageName());
 
@@ -107,7 +107,7 @@ public class BulbActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 int x = Integer.parseInt(dataSnapshot.getValue().toString());
                 if (x == 1) {
-                    String urione = "@drawable/bulb";  // where myresource (without the extension) is the file
+                    String urione = "@drawable/bulbon";  // where myresource (without the extension) is the file
 
                     int imageResource = getResources().getIdentifier(urione, null, getPackageName());
 
@@ -127,7 +127,7 @@ public class BulbActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 int x = Integer.parseInt(dataSnapshot.getValue().toString());
                 if (x == 1) {
-                    String urione = "@drawable/bulb";  // where myresource (without the extension) is the file
+                    String urione = "@drawable/bulbon";  // where myresource (without the extension) is the file
 
                     int imageResource = getResources().getIdentifier(urione, null, getPackageName());
 
@@ -147,7 +147,7 @@ public class BulbActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 int x = Integer.parseInt(dataSnapshot.getValue().toString());
                 if (x == 1) {
-                    String urione = "@drawable/bulb";  // where myresource (without the extension) is the file
+                    String urione = "@drawable/bulbon";  // where myresource (without the extension) is the file
 
                     int imageResource = getResources().getIdentifier(urione, null, getPackageName());
 
@@ -170,7 +170,7 @@ public class BulbActivity extends AppCompatActivity {
                     Toast.makeText(BulbActivity.this, "LightOn", Toast.LENGTH_SHORT).show();
                     dref.child("Light").child("b1").setValue(1);
 
-                    String urione = "@drawable/bulb";  // where myresource (without the extension) is the file
+                    String urione = "@drawable/bulbon";  // where myresource (without the extension) is the file
 
                     int imageResource = getResources().getIdentifier(urione, null, getPackageName());
 
@@ -208,7 +208,7 @@ public class BulbActivity extends AppCompatActivity {
                     Toast.makeText(BulbActivity.this, "LightOn", Toast.LENGTH_SHORT).show();
                     dref.child("Light").child("b2").setValue(1);
 
-                    String uri = "@drawable/bulb1";  // where myresource (without the extension) is the file
+                    String uri = "@drawable/bulbon";  // where myresource (without the extension) is the file
 
                     int imageResource = getResources().getIdentifier(uri, null, getPackageName());
 
@@ -246,7 +246,7 @@ public class BulbActivity extends AppCompatActivity {
                     Toast.makeText(BulbActivity.this, "LightOn", Toast.LENGTH_SHORT).show();
                     dref.child("Light").child("b3").setValue(1);
 
-                    String uri = "@drawable/bulb";  // where myresource (without the extension) is the file
+                    String uri = "@drawable/bulbon";  // where myresource (without the extension) is the file
 
                     int imageResource = getResources().getIdentifier(uri, null, getPackageName());
 
@@ -285,7 +285,7 @@ public class BulbActivity extends AppCompatActivity {
                     Toast.makeText(BulbActivity.this, "LightOn", Toast.LENGTH_SHORT).show();
                     dref.child("Light").child("b4").setValue(1);
 
-                    String uri = "@drawable/bulb3";  // where myresource (without the extension) is the file
+                    String uri = "@drawable/bulbon";  // where myresource (without the extension) is the file
 
                     int imageResource = getResources().getIdentifier(uri, null, getPackageName());
 
@@ -324,7 +324,7 @@ public class BulbActivity extends AppCompatActivity {
                     Toast.makeText(BulbActivity.this, "LightOn", Toast.LENGTH_SHORT).show();
                     dref.child("Light").child("b5").setValue(1);
 
-                    String uri = "@drawable/bulb4";  // where myresource (without the extension) is the file
+                    String uri = "@drawable/bulbon";  // where myresource (without the extension) is the file
 
                     int imageResource = getResources().getIdentifier(uri, null, getPackageName());
 
@@ -363,7 +363,7 @@ public class BulbActivity extends AppCompatActivity {
                     Toast.makeText(BulbActivity.this, "LightOn", Toast.LENGTH_SHORT).show();
                     dref.child("Light").child("b6").setValue(1);
 
-                    String uri = "@drawable/bulb5";  // where myresource (without the extension) is the file
+                    String uri = "@drawable/bulbon";  // where myresource (without the extension) is the file
 
                     int imageResource1 = getResources().getIdentifier(uri, null, getPackageName());
 

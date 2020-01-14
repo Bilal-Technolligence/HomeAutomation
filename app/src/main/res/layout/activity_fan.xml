@@ -69,7 +69,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="7dp"
-            android:padding="10dp"
             android:orientation="horizontal">
 
 
@@ -94,12 +93,12 @@
                     android:padding="20dp">
 
                     <ImageView
-                        android:id="@+id/tv1"
+                        android:id="@+id/fan1"
                         android:layout_width="70dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="15dp"
-                        android:src="@drawable/fan" />
+                        android:src="@drawable/fann" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -115,8 +114,7 @@
                         android:id="@+id/btnb1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="7dp"
-                        android:background="#EFCE15"/>
+                        android:layout_marginTop="7dp"/>
 
 
                 </LinearLayout>
@@ -147,7 +145,8 @@
                         android:layout_height="50dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="15dp"
-                        android:src="@drawable/fan" />
+                        android:id="@+id/fan2"
+                        android:src="@drawable/fann" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -163,8 +162,7 @@
                         android:id="@+id/btnb2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="7dp"
-                        android:background="#EFCE15"/>
+                        android:layout_marginTop="7dp"/>
 
 
                 </LinearLayout>
@@ -208,7 +206,8 @@
                             android:layout_height="50dp"
                             android:layout_gravity="center"
                             android:layout_marginTop="15dp"
-                            android:src="@drawable/fan" />
+                            android:id="@+id/fan3"
+                            android:src="@drawable/fann" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -224,8 +223,7 @@
                             android:id="@+id/btnb3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="7dp"
-                            android:background="#EFCE15"/>
+                            android:layout_marginTop="7dp"/>
 
 
                     </LinearLayout>
