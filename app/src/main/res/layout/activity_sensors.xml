@@ -78,8 +78,8 @@
                     android:layout_alignParentRight="true"
                     app:cardCornerRadius="100dp"
                     android:layout_margin="10dp"
-                    android:padding="5dp"
-                    app:cardBackgroundColor="#039BE5">
+                    app:cardBackgroundColor="#039BE5"
+                    android:elevation="200dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -130,10 +130,9 @@
 
 
                 <androidx.cardview.widget.CardView
-                    android:layout_height="160dp"
+                    android:layout_height="140dp"
                     android:layout_width="160dp"
                     android:layout_alignParentRight="true"
-                    android:layout_weight="1"
                     app:cardCornerRadius="10dp"
                     android:layout_margin="10dp"
                     app:cardBackgroundColor="#039BE5">
@@ -172,10 +171,9 @@
 
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
-                    android:layout_height="160dp"
+                    android:layout_height="140dp"
                     android:layout_width="160dp"
                     android:layout_alignParentRight="true"
-                    android:layout_weight="1"
                     app:cardCornerRadius="10dp"
                     android:layout_margin="10dp"
                     app:cardBackgroundColor="#039BE5">
