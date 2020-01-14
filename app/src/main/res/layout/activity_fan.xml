@@ -1,9 +1,242 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
     tools:context=".FanActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardFan"
+                android:layout_height="140dp"
+                android:layout_width="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                app:cardBackgroundColor="#EFCE15">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/fan"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/fan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/fan"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="Ceiling Fans"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="22dp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardFan1"
+                android:layout_height="170dp"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                app:cardBackgroundColor="#039BE5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:id="@+id/fan1"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/fann" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageairconditionar"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:text="Ceiling Fan 1"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp" />
+                    <Switch
+                        android:id="@+id/btnb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardFan2"
+                android:layout_height="170dp"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                app:cardBackgroundColor="#039BE5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:id="@+id/fan2"
+                        android:src="@drawable/fann" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageairconditionar"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:text="Ceiling Fan 2"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16dp" />
+                    <Switch
+                        android:id="@+id/btnb2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardFan3"
+                    android:layout_height="170dp"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="10dp"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    app:cardBackgroundColor="#039BE5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <ImageView
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/fan3"
+                            android:src="@drawable/fann" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/imageairconditionar"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:text="Ceiling Fan 3"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="16dp" />
+                        <Switch
+                            android:id="@+id/btnb3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"/>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
