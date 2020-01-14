@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E0E0E0"
+    android:background="#fff"
     android:orientation="vertical"
     tools:context=".SensorsActivity">
     <ScrollView
@@ -66,7 +66,7 @@
 
             </LinearLayout>
             <LinearLayout
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:gravity="center_horizontal"
                 android:layout_height="wrap_content"
@@ -125,7 +125,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:padding="5dp"
+                android:padding="10dp"
                 android:orientation="horizontal">
 
 
@@ -136,7 +136,6 @@
                     android:layout_weight="1"
                     app:cardCornerRadius="10dp"
                     android:layout_margin="10dp"
-                    android:padding="5dp"
                     app:cardBackgroundColor="#039BE5">
 
                     <LinearLayout
@@ -155,7 +154,7 @@
                             android:layout_gravity="center"
                             android:text="Humidity"
                             android:textStyle="bold"
-                            android:textSize="30dp"
+                            android:textSize="25dp"
                             android:textColor="@color/colorWhite"></TextView>
                         <TextView
                             android:layout_width="wrap_content"
@@ -165,7 +164,7 @@
                             android:layout_gravity="center"
                             android:text="59%"
                             android:textStyle="bold"
-                            android:textSize="30dp"
+                            android:textSize="28dp"
                             android:textColor="@color/colorWhite"></TextView>
 
 
@@ -179,7 +178,6 @@
                     android:layout_weight="1"
                     app:cardCornerRadius="10dp"
                     android:layout_margin="10dp"
-                    android:padding="5dp"
                     app:cardBackgroundColor="#039BE5">
 
                     <LinearLayout
@@ -198,7 +196,7 @@
                             android:layout_gravity="center"
                             android:text="Wind"
                             android:textStyle="bold"
-                            android:textSize="30dp"
+                            android:textSize="25dp"
                             android:textColor="@color/colorWhite"></TextView>
                         <TextView
                             android:layout_width="wrap_content"
@@ -208,7 +206,7 @@
                             android:layout_gravity="center"
                             android:text="8 km/h"
                             android:textStyle="bold"
-                            android:textSize="30dp"
+                            android:textSize="28dp"
                             android:textColor="@color/colorWhite"></TextView>
 
 
