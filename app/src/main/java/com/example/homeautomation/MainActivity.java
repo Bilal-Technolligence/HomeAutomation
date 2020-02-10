@@ -70,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
                 if (a1.isChecked()) {
                     Toast.makeText(MainActivity.this, "Ac On", Toast.LENGTH_SHORT).show();
                     dref.child("AC").setValue(1);
-
                 } else {
                     dref.child("AC").setValue(0);
                 }
