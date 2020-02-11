@@ -22,17 +22,17 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        SharedPreferences prefs = getSharedPreferences("Log", MODE_PRIVATE);
-        boolean isLoggedIn = prefs.getBoolean("isLoggedIn", false);
-        if (isLoggedIn) {
-            Intent intent=new Intent(LoginActivity.this,MainActivity.class);
-            startActivity(intent);
-            finish();
-        } else {
-            Intent intent=new Intent(LoginActivity.this,LoginActivity.class);
-            startActivity(intent);
-            finish();
-        }
+//        SharedPreferences prefs = getSharedPreferences("Log", MODE_PRIVATE);
+//        boolean isLoggedIn = prefs.getBoolean("isLoggedIn", false);
+//        if (isLoggedIn) {
+//            Intent intent=new Intent(LoginActivity.this,MainActivity.class);
+//            startActivity(intent);
+//            finish();
+//        } else {
+//            Intent intent=new Intent(LoginActivity.this,LoginActivity.class);
+//            startActivity(intent);
+//            finish();
+//        }
         btn=(Button) findViewById(R.id.login);
         id=(EditText) findViewById(R.id.id);
         password=(EditText) findViewById(R.id.password);
