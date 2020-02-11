@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
@@ -36,6 +37,10 @@ public class MainActivity extends AppCompatActivity {
         btnFan = findViewById(R.id.cardFan);
         btnAirConditionar = findViewById(R.id.cardAirConditionar);
         btnSensors = findViewById(R.id.cardSensors);
+
+        SharedPreferences.Editor editor = getSharedPreferences("Log", MODE_PRIVATE).edit();
+        editor.putBoolean("isLoggedIn", true );
+        editor.commit();
 
         dref.child("AC").addValueEventListener(new ValueEventListener() {
             @Override
