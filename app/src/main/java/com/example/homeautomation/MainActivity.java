@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.Toast;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     CardView btnBulb, btnFan, btnAirConditionar, btnSensors;
     DatabaseReference dref = FirebaseDatabase.getInstance().getReference();
     Switch a1;
+    Button logout;
 
 
     @Override
@@ -37,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         btnFan = findViewById(R.id.cardFan);
         btnAirConditionar = findViewById(R.id.cardAirConditionar);
         btnSensors = findViewById(R.id.cardSensors);
+        logout = findViewById(R.id.btnLogout);
 
         SharedPreferences.Editor editor = getSharedPreferences("Log", MODE_PRIVATE).edit();
         editor.putBoolean("isLoggedIn", true );
@@ -86,6 +89,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, SensorsActivity.class));
+            }
+        });
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SharedPreferences settings = getSharedPreferences("Log", MODE_PRIVATE);
+                SharedPreferences.Editor editor = settings.edit();
+                editor.remove("isLoggedIn");
+                editor.commit();
+                startActivity(new Intent(MainActivity.this , LoginActivity.class));
+                finish();
             }
         });
     }
