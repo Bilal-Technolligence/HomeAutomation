@@ -20,72 +20,44 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardFan"
-                    android:layout_height="140dp"
-                    android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#239DB3">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageairconditionar"
                     android:layout_alignParentLeft="true"
-                    android:layout_weight="1"
-                    app:cardCornerRadius="10dp"
-                    android:layout_margin="10dp"
-                    android:padding="5dp"
-                    app:cardBackgroundColor="#33437C">
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_alignParentLeft="true"
-                        android:layout_marginLeft="10dp"
-                        android:orientation="vertical">
+                    android:layout_marginTop="5dp"
+                    android:text="Sensors"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="40dp"
+                    android:textStyle="bold" />
 
-                        <ImageView
-                            android:id="@+id/sensors"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:layout_gravity="center"
-                            android:layout_marginTop="15dp"
-                            android:src="@drawable/sensor" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/imageairconditionar"
-                            android:layout_alignParentLeft="true"
-                            android:layout_marginTop="5dp"
-                            android:layout_gravity="center"
-                            android:text="Sensors"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorWhite"
-                            android:textSize="22dp" />
-
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
 
             </LinearLayout>
             <LinearLayout
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
-                android:gravity="center_horizontal"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
                     android:layout_height="200dp"
-                    android:layout_width="200dp"
-                    android:layout_alignParentRight="true"
-                    app:cardCornerRadius="100dp"
-                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="40dp"
                     android:padding="5dp"
-                    app:cardBackgroundColor="#039BE5">
+                    app:cardBackgroundColor="@color/colorWhite">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_alignParentLeft="true"
-                        android:layout_marginLeft="10dp"
                         android:gravity="center_horizontal"
                         android:orientation="vertical"
                         android:padding="20dp">
@@ -96,22 +68,42 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
-                            android:layout_marginTop="30dp"
-                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="left"
                             android:text="Temperature"
-                            android:textStyle="bold"
-                            android:textColor="@color/colorWhite"
+                            android:textColor="#000000"
                             android:textSize="25dp" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentLeft="true"
-                            android:layout_marginTop="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="2dp"
+                            android:text="25 °C "
+                            android:textColor="#000000"
+                            android:textSize="60dp" />
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <ImageView
+                            android:id="@+id/sensors"
+                            android:layout_width="120dp"
+                            android:layout_height="170dp"
                             android:layout_gravity="center"
-                            android:text="25 C "
-                            android:textStyle="bold"
-                            android:textColor="@color/colorWhite"
-                            android:textSize="50dp" />
+                            android:layout_alignParentRight="true"
+
+                            android:layout_marginLeft="100dp"
+                            android:src="@drawable/temp" />
 
 
                     </LinearLayout>
@@ -136,7 +128,7 @@
                     android:layout_weight="1"
                     app:cardCornerRadius="10dp"
                     android:layout_margin="10dp"
-                    app:cardBackgroundColor="#039BE5">
+                    app:cardBackgroundColor="#239DB3">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -178,7 +170,7 @@
                     android:layout_weight="1"
                     app:cardCornerRadius="10dp"
                     android:layout_margin="10dp"
-                    app:cardBackgroundColor="#039BE5">
+                    app:cardBackgroundColor="#239DB3">
 
                     <LinearLayout
                         android:layout_width="match_parent"
